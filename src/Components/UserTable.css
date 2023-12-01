@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  div > input {
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    width: 20%;
+    display: inline-block;
+  }
+  
+  div > button.search-icon {
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 10%;
+    display: inline-block;
+  }
+  
+  /* User Table Styles */
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Additional space for better separation */
+  th .select-all-checkbox {
+    margin-right: 10px;
+  }
+  
+  th .actions {
+    margin-left: 20px;
+  }
+  
+  div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  div > button.pagination-btn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
+  button.bulk-delete-btn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 5px 0; /* Added margin below the Delete Selected button */
+  }
+  
+  input[type="checkbox"] {
+    margin: 0;
+  }
+  
+  tr.selected {
+    background-color: #f0f0f0;
+  }
+  
+  /* Pagination icons */
+  .pagination-btn.first-page::before {
+    content: '<<';
+  }
+  
+  .pagination-btn.last-page::before {
+    content: '>>';
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    table {
+      font-size: 12px;
+    }
+  
+    div > button {
+      padding: 8px;
+    }
+  
+    button.bulk-delete-btn {
+      padding: 8px;
+    }
+  }
+  
